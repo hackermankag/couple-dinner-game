@@ -36,6 +36,12 @@ export default function App() {
           <p style={styles.subtitle}>Let's have fun and connect with these 20 questions.</p>
           <button style={styles.button} onClick={() => setPage("game")}>Start the Game</button>
         </div>
+             ) : page === "endgame" ? (
+        <div style={styles.landing}>
+          <h1 style={styles.title}>Thank You for Playing!</h1>
+          <p style={styles.subtitle}>We hope you enjoyed these meaningful conversations together.</p>
+          <button style={styles.button} onClick={() => window.location.reload()}>Exit</button>
+        </div>
       ) : (
         <div style={styles.game}>
           <div style={styles.card}>
@@ -52,11 +58,8 @@ export default function App() {
             </button>
             <button
               style={styles.button}
-              onClick={() => setCurrent(current < questions.length - 1 ? current + 1 : current)}
-              disabled={current === questions.length - 1}
-            >
-              Next
-            </button>
+              onClick={() => current === questions.length - 1 ? setPage("endgame") : setCurrent(current + 1)}              disabled={current === questions.length - 1}
+              {current === questions.length - 1 ? "Finish" : "Next"}            </button>
           </div>
         </div>
       )}
