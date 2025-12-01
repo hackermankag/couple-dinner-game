@@ -22,6 +22,16 @@ const questions = [
   "What's a funny memory from our time together?",
   "What do you admire most about me?",
   "What's a tradition you want us to create?",
+  "In what ways would you desire us to grow together spiritually in the next year?",
+"What are some things God has taught you about love from our marriage?",
+"What are your dreams for our family and our future as a couple? What do we need to do to achieve them?",
+"What times have you felt truly loved by me? What do I need to do more of?",
+"How can I honour you better in our marriage?",
+"How do you feel about our sexual intimacy? What can we do to enjoy each other more?",
+"What can we do to build our emotional connection over the next year?",
+"What are you most thankful to God for this year?",
+"How can we start, revive or improve our date nights?",
+"Tell me anything you have desired to tell me and haven't had the opportunity.",
 ];
 
 export default function App() {
